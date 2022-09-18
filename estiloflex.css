@@ -1,0 +1,65 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* height: 600px; */
+}
+header{
+    width:100%;
+    background-color: blueviolet;
+}
+
+/* .hijo{
+    background-color: aquamarine;
+    margin:0.5em;
+    width: 30%;
+} */
+img{
+    float:left;
+}
+
+ul{
+    list-style:none; 
+    display:flex;
+    float:right;
+}
+
+li{
+    padding:1em;
+}
+
+li:hover{
+    background-color: red;
+}
+
+.secc1{
+    width:100%;
+    /* display: flex; */
+}
+
+.secc1 article{
+    width:32%;
+}
+
+.secc2{
+    width:60%;
+    background-color: aquamarine;
+}
+
+aside{
+    width:40%;
+
+}
+
+div{
+    width:60%;
+    height: 4em;
+    background-color: brown;
+}
+
+footer{
+    width:100%;
+    background-color: lightsalmon;
+}

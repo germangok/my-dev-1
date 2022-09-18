@@ -1,0 +1,6 @@
+.fixdoted{
+    position: fixed;
+    border: 5px dotted red;
+}
+
+.stadash{}

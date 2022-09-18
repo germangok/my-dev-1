@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        #cajas {
+            height: 600px;
+            width: 1000px;
+            background-color: aqua;
+            justify-content: center;
+        }
+
+        #caja1 {
+            width: 500px;
+            float: left;
+            margin-right: 15px;
+            margin-left: 15px;
+            background-color: bisque;
+            height: 220px;
+        }
+
+        #centrar {
+            display: flex;
+            
+            justify-content: center;
+        }
+
+        #caja2 {
+            width: 300px;
+            float: right;
+            background-color: rgb(182, 101, 1);
+            height: 100px;
+        }
+
+        #caja3 {
+            width: 300px;
+            background-color: rgb(1, 182, 70);
+            height: 100px;
+            margin-top: 20px;
+            
+            /* margin-left: 15px; */
+        }
+
+        .columnas {
+            column-count: 2;
+            column-gap: 20px;
+            column-rule: 6px outset rgb(229, 14, 14);
+        }
+        
+        .flotantes{
+            float:right;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cajas">
+        <section id="caja1" class="columnas">
+            <li>Ataúlfo</li>
+            <li>Sigerico</li>
+            <li>Walia</li>
+            <li>Teodoredo</li>
+            <li>Turismundo</li>
+            <li>Teodorico</li>
+            <li>Eurico</li>
+            <li>Alarico II</li>
+            <li>Gesaleico</li>
+            <li>Amalarico</li>
+            <li>Teudis</li>
+            <li>Teudiselo</li>
+            <li>Agila I</li>
+            <li>Atanagildo</li>
+            <li>Liuva</li>
+            <li>Leovigildo</li>
+        </section>
+
+        <section id="caja2">
+
+        </section>
+        <br style="clear:both;"><br><br>
+        <section id="centrar">
+            <article id="caja3">
+            <div class="flotantes" style="background-color:beige; width: 80px;">algo 1</div>
+            <div class="flotantes" style="background-color:rgb(201, 201, 96); width: 80px;">algo 2</div>
+            <div class="flotantes" style="background-color:rgb(128, 107, 6); width: 80px;">algo 3</div>
+            </article>
+        </section>
+    </header>
+</body>
+
+</html>

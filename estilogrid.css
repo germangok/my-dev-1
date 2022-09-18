@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+.general{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* grid-template-rows: repeat(6,200px); */
+    /* align-content: center; */
+    width:80%;
+    gap: 5px;
+}
+
+.encabeza{
+    grid-area:  1 / 1 / 2 / span 6;
+    background-color: bisque;
+}
+
+.encabeza>img{
+    float:left;
+}
+
+.encabeza>nav{
+    float:right;
+}
+.encabeza>nav>ul{
+    list-style: none;
+    float:right;
+}
+
+.encabeza nav ul li{
+    float:left;
+    padding:10px;
+}
+
+.encabeza nav ul li:hover{
+    background-color: aqua;
+}
+
+.principal{
+    grid-area:  2 / 1 / span 3 / span 6;
+    background-color: rgb(2, 202, 69);
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,200px);
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+.banner{
+    grid-area:  1 / 1 / 2 / span 6;
+}
+
+
+/* .principal{
+    display: grid;
+    grid-template-columns: repeat(1fr,6);
+    margin: 1em;
+    background-color: rgb(214, 133, 3);
+} */
+.superior{
+    grid-area:  2 / 1 / 3 / span 6;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: blueviolet;
+}
+
+.tit-sup{
+    grid-area:  1 / 1 / 2 / span 6;
+    margin: 0.5em;
+
+}
+
+.primer-art{
+    grid-area:  2 / 1 / 3 / span 2;
+    background-color: rgb(86, 114, 227);
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.segundo-art{
+    grid-area:  2 / 3 / 3 / span 2;
+    background-color: rgb(86, 114, 227);
+    margin: 0.5em;
+    padding:0.5em;
+}
+
+.tercer-art{
+    grid-area:  2 / 5 / 3 / span 2;
+    background-color: rgb(86, 114, 227);
+    margin: 0.5em;
+    padding:0.5em;
+}
+
+
+.lat-izq{
+    grid-area:  3 / 1 / 6 / span 4;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: aquamarine;
+    margin: 0.5em;
+    gap:0.5em;
+}
+
+.tit-lizq{
+    grid-area:  2 / 1 / 3 / span 4;
+}
+
+.art-uno{
+    grid-area:  3 / 1 / 4 / span 4;
+    background-color: blanchedalmond;
+    margin: 0.5em;
+    padding:0.5em;
+}
+
+.art-dos{
+    grid-area:  4 / 1 / 5 / span 4;
+    background-color: blanchedalmond;
+    width:4fr;
+    margin: 0.5em;
+    padding:0.5em;
+}
+
+.art-tres{
+    grid-area:  5 / 1 / 6 / span 4;
+    background-color: blanchedalmond;
+    width:4fr;
+    margin: 0.5em;
+    padding:0.5em;
+}
+
+/* .complementa{
+    grid-area:  3 / 1 / 4 / span 4;
+    margin: 1em;
+    background-color: cadetblue;
+} */
+
+/* div{
+    width: 2fr;
+    height: 120px;
+    margin:0.7em;
+    padding:0.5em;
+    background-color: brown;
+    align-content: center;
+} */
+
+.lat-der{
+    grid-area:  3 / 5 / 6 / span 2;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: aquamarine;
+    margin: 0.5em;
+    gap:1em;
+}
+
+.tit-lder{
+    grid-area:  1 / 1 / 2 / span 2;
+}
+
+.com1{
+    grid-area:  2 / 1 / 3 / span 2;
+    margin: 0.5em;
+    padding:10px;
+    background-color: coral;
+}
+
+.com2{
+    grid-area:  3 / 1 / 4 / span 2;
+    margin: 0.5em;
+    padding:10px;
+    background-color: coral;
+}
+
+.com3{
+    grid-area:  4 / 1 / 5 / span 2;
+    margin: 0.5em;
+    padding:10px;
+    background-color: coral;
+}
+
+footer{
+    grid-area:  6 / 1 / 7 / span 6;
+    background-color: green;
+}
+
+footer>ul{
+    float:right;
+    list-style: none;
+}
+
+footer>ul>li{
+    float:left;
+    padding:1.5em;
+}
+
+footer>ul>li:hover{
+    background-color: aqua;
+}
